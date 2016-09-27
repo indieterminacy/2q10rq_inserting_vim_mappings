@@ -11,7 +11,8 @@
         call arpeggio#map('n', '', 0, 'dqi-', 'A<space>')
         call arpeggio#map('n', '', 0, 'ar', 'A<space>')
     " Insert word after
-        call arpeggio#map('n', '', 0, 'dqip', 'wi<space><ESC>i')
+    " TODO ascertain whether this is the mapping effecting p mapping
+        " call arpeggio#map('n', '', 0, 'dqip', 'wi<space><ESC>i')
         call arpeggio#map('n', '', 0, 'aj', 'wi<space><ESC>i')
 "== 60 System
 "=== 60 Syntax
@@ -39,7 +40,8 @@
     " TODO Arp it
     " TODO Test if experimental function is relevant
         nnoremap <silent> test :<C-U>call MyFunc()<CR>
-        nnoremap <silent> <space>p :<C-U>call MyFunc()<CR>
+    " TODO Ascertain whether <space> is causing problems
+        " nnoremap <silent> <space>p :<C-U>call MyFunc()<CR>
 "==== 60 Document Creation
     noremap <buffer> n.q2 i 'zs
     noremap <buffer> n.q2k O 'zs
